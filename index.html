@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<!--content type : HTML -->
+	<meta http-equiv="content-type"
+		content="text/html; charset=UTF-8"> 
+
+	<!-- Making viewport responsive -->
+	<meta name="viewport" content= 
+		"width=device-width,minimum-scale=1, 
+		initial-scale=1"> 
+
+	<!-- Loading jQuery, jQuery.terminal, 
+		and style sheet -->
+	<script src= 
+		"https://code.jquery.com/jquery-3.3.1.min.js"> 
+	</script> 
+
+	<script src= 
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"> 
+	</script> 
+
+	<link rel="stylesheet" href= 
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" /> 
+
+<!-- Css qui permet de mettre les effets de la console -->
+<style type="text/css"> 
+}
+.terminal,span,.cmd,div {  
+	--color: rgba(0, 200, 0, 0.99);
+
+} 
+.terminal, span { 
+    --size: 1.6; 
+} 
+.terminal{
+    --color: rgba(0, 200, 0, 0.99);
+    --animation: terminal-glow;
+    --glow: 1;
+}
+</style>
+</head> 
+
+<body> 
+	<template id="ascii">
+.------..------..------..------..------..------..------.
+|K.--. ||I.--. ||L.--. ||L.--. ||K.--. ||I.--. ||D.--. |
+| :/\: || (\/) || :/\: || :/\: || :/\: || (\/) || :/\: |
+| :\/: || :\/: || (__) || (__) || :\/: || :\/: || (__) |
+| '--'K|| '--'I|| '--'L|| '--'L|| '--'K|| '--'I|| '--'D|
+`------'`------'`------'`------'`------'`------'`------'
+________________________________________________________
+Welcome :3 type help for commands
+
+	</template>
+	<script>
+		// ouverture du terminal
+$('body').terminal({ 
+    kid: function (name) { 
+        this.echo('hi, ' + name + 
+            '. Welcome to my mind'); 
+    },
+    kill: function () {
+    	this.echo('no dont do that now you dont know me well...');
+    },
+    presentation: function() {
+    	this.echo('im killkid, 19 years old im a femboy and i like to troll on internet just a bit '
+    		+ '\n im lonely i dont have a lot of friends.'
+    		+ '\n i forgot to tell you that this project was like a personal journal so if i speak a lot about me its normal.'
+    		+ '\n i have a secret that i will tell you later if you continue to rechearch about me. :3'
+    		+ '\n i give you a new command to continue : trap');
+    },
+    help: function () {
+    	this.echo('why youre asking for help?'
+    		+ ' if you need you can use this commands : '
+    		+ '\nhelp, kid + hi, kill, presentation');
+    }, 
+    trap: function () {
+    	this.echo('a situation in which people lie in wait to make a surprise attack. we were fed false information by a double agent and walked straight into a trap'
+    		+ '\nthats the point this definition describe me very well.'
+    		+ " But to be honest, is me or femboy are hyper-sexualised ? No seriously, we're not objects and this has nothing to do with sexuality, so why have it come to this?"
+    		+ "\nI've also seen that femboys are now attached to lgbt and all that crap.")
+    }
+
+}, { 
+    greetings: ascii.innerHTML
+}); 
+	</script>
+</body> 
+
+</html>
