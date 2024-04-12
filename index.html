@@ -44,19 +44,38 @@
 
 <body> 
 	<template id="ascii">
-.------..------..------..------..------..------..------.
-|K.--. ||I.--. ||L.--. ||L.--. ||K.--. ||I.--. ||D.--. |
-| :/\: || (\/) || :/\: || :/\: || :/\: || (\/) || :/\: |
-| :\/: || :\/: || (__) || (__) || :\/: || :\/: || (__) |
-| '--'K|| '--'I|| '--'L|| '--'L|| '--'K|| '--'I|| '--'D|
-`------'`------'`------'`------'`------'`------'`------'
+         ░▓▓▒░░░  ▓█░           ▒▓░
+ ░▒░    ░▓▓░      ██            ██░
+ ░▓▓░  ░▓▓░       ██            ██
+ ░▒▒▒▓▓▓█▒        ██            ██
+ ░░ ░█████▓░      ██░           ██
+     ░███████▒    ██▒           ██░            ░▒▒
+      ▓█▒ ▒████▓░ ██▒           ▓█▒         ░▓███▒
+      ▒█▒   ░▓███ ██▓░    ░▒▒▒▓████       ░▓████▒
+      ▒██░ ░▒░░▓█████▒░▒▒▓█████████░   ░▒▓███▓░
+      ░██▒ ▒▓░  ░█████▓████▓▒▒░  ▓█▒░▓█████▓░
+       ▒█▒▒█▒    ░░▓███▓▒▒░      ▓█████▓▒░
+  ░▒░  ▒█▒██░      ░██▒░ ▓████▓▒██████████████▓░
+  ▒█▓▒░▒█▒██             ████████▓█████████████▓
+  ░▒▓███████░            ▓██████░░██▓▒░      ░██░
+    ░▒▓██████░            ▒███▒░░▓██▓▒░       ░▓▒
+        ▒█████▓▒░               ░▒▒▓▓▓▓░      ░▓▒
+          ░███████▓▒░         ░░  ░▒▒▒▓▓▒░   ░▓▓░
+           ░▓███▓█████▒      ░██░   ░▒▓▓▓▓▒░░▓▓░
+             ▒██▓▒▒▓█████▒    ▓█▓░   ░▒▒▓▓▒▓██░
+              ░███░  ░▓███▓░  ▒██▒     ░▓▓▒██▒
+               ░██▓░    ░▓▓░  ▒██▒░     ░▒██▒
+                ▒▓▓▒          ███▒░       ▒█▒
+                ░░░░          ██▓▒         ░░
+                              ▓▓▒▒
 ________________________________________________________
-Welcome :3 type help for commands
+Welcome on my diary type help for a list of commands available... 	
 
 	</template>
 	<script>
 		// ouverture du terminal
 $('body').terminal({ 
+
     kid: function (name) { 
         this.echo('hi, ' + name + 
             '. Welcome to my mind'); 
@@ -79,17 +98,32 @@ $('body').terminal({
     trap: function () {
     	this.echo('a situation in which people lie in wait to make a surprise attack. we were fed false information by a double agent and walked straight into a trap'
     		+ '\nthats the point this definition describe me very well.'
-    		+ " But to be honest, is me or femboy are hyper-sexualised ? No seriously, we're not objects and this has nothing to do with sexuality, so why have it come to this?"
-    		+ "\nI've also seen that femboys are now attached to lgbt and all that crap.");
+    		+ " But to be honest, is it me or femboy are hyper-sexualised ? No seriously, we're not objects and this has nothing to do with sexuality, so why have it come to this?"
+    		+ "\n.")
     },
-    Basile:function(){
-		this.echo("It's my demon <3");
-    }
+    show: function () {
+    	this.echo('this is just a classic copy pasta no matter wath the text, i like boys so much,' 
+    		+'\nfor real nothing in this text is real dont trust me seriously, im so sub oh my >u<'
+    		+'\n NO FOR REAL IM NOT LIKE THAT I MEAN I WANT TO BE MARRIED BY FORCE AND FORCED TO ACT LIKE A WOMEN BUT UHHHH'
+    		+'\n hahaha you really thought it was real? no its not ! ')
+    },
+    portfolio: function(){
+    	this.echo('[[@;;;;file:///C:/Users/Ledina/Desktop/projet/images/banner2.png]]');
+		this.echo('[[!;;;;https://www.youtube.com/watch?v=IU2wBKoDOzg]video]')
+    },
+    galery: function(){
+    	this.echo('[[!;;;;images.html]Galery of images]') // Link to an html page
+    },
+    // portfolio: function(){
+    // 	this.echo('[[@;;;;https://i.kym-cdn.com/photos/images/newsfeed/000/991/329/1e7.jpg]]');
+	// 	this.echo('[[!;;;;https://www.youtube.com/watch?v=roqkaqOuNZE]metal gear]')
+    // }, TO MAKE LINK AND IMAGE FOLLOW THIS
 
 }, { 
     greetings: ascii.innerHTML
 }); 
 	</script>
+	
 </body> 
 
 </html>
