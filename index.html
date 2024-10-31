@@ -43,6 +43,16 @@
 </head> 
 
 <body> 
+    <audio id="audio" autoplay loop style="display: none;">
+        <source src="./audio/thetruth.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+   <script>
+        // Régler le volume de l'audio à 20 %
+        document.getElementById('audio').volume = 0.09;
+    </script>
+
 	<template id="ascii">
 ⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⢠⡆⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠈⣷⣄⠀⠀⠀⠀⣾⣷⠀⠀⠀⠀⣠⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀
@@ -60,7 +70,7 @@
 ⠀⠀⠀⠀⠀⠀⠀⣸⠟⠁⠀⠀⠀⠘⣿⡇⠀⠀⠀⠀⠙⢷⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠻⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀
 ________________________________________________________
-Welcome in Heaven, type thetruth to see whats wrong with you 	
+Welcome in Heaven, type thetruth to see wats wrong with you 	
 
 	</template>
 	<script>
