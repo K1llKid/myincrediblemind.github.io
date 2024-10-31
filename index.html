@@ -51,6 +51,15 @@
    <script>
         // Régler le volume de l'audio à 20 %
         document.getElementById('audio').volume = 0.09;
+
+
+window.addEventListener('load', function() {
+            var audio = document.getElementById('monAudio');
+            audio.play().catch(function(error) {
+                console.log("Lecture automatique bloquée : ", error);
+                // Option : Afficher un message pour informer l'utilisateur
+            });
+        });
     </script>
 
 	<template id="ascii">
